@@ -1,0 +1,290 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "productid": "1",
+      "name": "Galaxy S18 Ultra",
+      "category": "Mobile",
+      "price": 23000,
+      "serial_no": "abc123",
+      "release_date": "2022-04-03",
+      "stock_unit": "120",
+      "desc": "premium Mobile phone"
+    },
+    {
+      "id": 2,
+      "productid": "21",
+      "name": "Galaxy S19 Ultra",
+      "category": "Mobile",
+      "price": 32000,
+      "serial_no": "abc121",
+      "release_date": "2022-04-03",
+      "stock_unit": "122",
+      "desc": "premium Mobile phone"
+    },
+    {
+      "id": 3,
+      "productid": "13",
+      "name": "Galaxy S20 Ultra",
+      "category": "Mobile",
+      "price": 34000,
+      "serial_no": "abc120",
+      "release_date": "2022-04-03",
+      "stock_unit": "111",
+      "desc": "premium Mobile phone"
+    },
+    {
+      "id": 4,
+      "productid": "14",
+      "name": "Galaxy S21 Ultra",
+      "category": "Mobile",
+      "price": 49000,
+      "serial_no": "abc119",
+      "release_date": "2022-04-03",
+      "stock_unit": "232",
+      "desc": "premium Mobile phone"
+    },
+    {
+      "id": 5,
+      "productid": "16",
+      "name": "Galaxy S22 Ultra",
+      "category": "Mobile",
+      "price": 89000,
+      "serial_no": "abc124",
+      "release_date": "2022-04-03",
+      "stock_unit": "444",
+      "desc": "premium Mobile phone"
+    },
+    {
+      "id": 6,
+      "productid": "17",
+      "name": "Galaxy S23 Ultra",
+      "category": "Mobile",
+      "price": 12000,
+      "serial_no": "abc125",
+      "release_date": "2022-04-03",
+      "stock_unit": "211",
+      "desc": "premium Mobile phone"
+    },
+    {
+      "id": 7,
+      "productid": "18",
+      "name": "Galaxy S24 Ultra",
+      "category": "Mobile",
+      "price": 44000,
+      "serial_no": "abc126",
+      "release_date": "2022-04-03",
+      "stock_unit": "100",
+      "desc": "premium Mobile phone"
+    },
+    {
+      "productid": "121",
+      "name": "Galaxy S25 Ultra",
+      "category": "Mobile",
+      "price": 1221212,
+      "serial_no": "abc127",
+      "release_date": "2022-04-03",
+      "stock_unit": "1200",
+      "desc": "premium Mobile phone",
+      "id": 8
+    },
+    {
+      "productid": "1212",
+      "name": "Galaxy S26 Ultra",
+      "category": "Mobile",
+      "price": 39000,
+      "serial_no": "abc128",
+      "release_date": "2022-04-03",
+      "stock_unit": "300",
+      "desc": "premium Mobile phone",
+      "id": 9
+    },
+    {
+      "productid": "11",
+      "name": "Galaxy S27 Ultra",
+      "category": "Mobile",
+      "price": 12000,
+      "serial_no": "abc129",
+      "release_date": "2022-04-03",
+      "stock_unit": "400",
+      "desc": "premium Mobile phone",
+      "id": 10
+    },
+    {
+      "productid": "22",
+      "name": "Galaxy S28 Ultra",
+      "category": "Mobile",
+      "price": 12000,
+      "serial_no": "abc130",
+      "release_date": "2022-03-29",
+      "stock_unit": "222",
+      "desc": "premium Mobile phone",
+      "id": 11
+    },
+    {
+      "productid": "32",
+      "name": "Galaxy S29 Ultra",
+      "category": "Mobile",
+      "price": 22000,
+      "serial_no": "abc131",
+      "release_date": "2022-04-03",
+      "stock_unit": "5000",
+      "desc": "premium Mobile phone",
+      "id": 12
+    },
+    {
+      "productid": "92",
+      "name": "Galaxy S30 Ultra",
+      "category": "Mobile",
+      "price": 76000,
+      "serial_no": "abc132",
+      "release_date": "2022-04-03",
+      "stock_unit": "1222",
+      "desc": "premium Mobile phone",
+      "id": 13
+    },
+    {
+      "productid": "62",
+      "name": "Galaxy 231 Ultra",
+      "category": "Mobile",
+      "price": 76000,
+      "serial_no": "abc133",
+      "release_date": "2016-01-13",
+      "stock_unit": "121",
+      "desc": "",
+      "id": 14
+    },
+    {
+      "productid": "64",
+      "name": "Galaxy S32 Ultra",
+      "category": "Mobile",
+      "price": 34000,
+      "serial_no": "abc134",
+      "release_date": "2021-12-08",
+      "stock_unit": "1000",
+      "desc": "mobile phone",
+      "id": 15
+    },
+    {
+      "productid": "110",
+      "name": "Galaxy S34 Ultra",
+      "category": "Mobile",
+      "price": 33000,
+      "serial_no": "abc135",
+      "release_date": "2022-01-03",
+      "stock_unit": "300",
+      "desc": "mobile phones",
+      "id": 16
+    },
+    {
+      "productid": "555",
+      "name": "Galaxy S35 Ultra",
+      "category": "Mobile",
+      "price": 44000,
+      "serial_no": "abc136",
+      "release_date": "2021-07-05",
+      "stock_unit": "66",
+      "desc": "mobile phone",
+      "id": 17
+    },
+    {
+      "productid": "988",
+      "name": "Galaxy S36 Ultra",
+      "category": "Mobile",
+      "price": 42000,
+      "serial_no": "abc137",
+      "release_date": "2021-12-09",
+      "stock_unit": "788",
+      "desc": "a new phone is on the market",
+      "id": 18
+    },
+    {
+      "productid": "77",
+      "name": "Galaxy S37 Ultra",
+      "category": "Mobile",
+      "price": 44400,
+      "serial_no": "abc138",
+      "release_date": "2021-12-10",
+      "stock_unit": "89",
+      "desc": "mmmmmmm",
+      "id": 19
+    },
+    {
+      "productid": "99",
+      "name": "Galaxy S38 Ultra",
+      "category": "Mobile",
+      "price": 60000,
+      "serial_no": "abc139",
+      "release_date": "2022-04-01",
+      "stock_unit": "100",
+      "desc": "qwerty",
+      "id": 20
+    },
+    {
+      "productid": "223",
+      "name": "Galaxy S38 Ultra",
+      "category": "Mobile",
+      "price": 55000,
+      "serial_no": "abc138",
+      "release_date": "2022-04-13",
+      "stock_unit": "800",
+      "desc": "qwerty1",
+      "id": 21
+    },
+    {
+      "productid": "1111",
+      "name": "qwer",
+      "category": "Mobile",
+      "price": 11,
+      "serial_no": "qwerr",
+      "release_date": "2022-04-12",
+      "stock_unit": "11112",
+      "desc": "qqwewe",
+      "id": 22
+    },
+    {
+      "productid": "1234",
+      "name": "motorola123",
+      "category": "Mobile",
+      "price": 23000,
+      "serial_no": "qwe123",
+      "release_date": "2022-03-28",
+      "stock_unit": "1111",
+      "desc": "cxz",
+      "id": 23
+    },
+    {
+      "productid": "13",
+      "name": "abcmobile",
+      "category": "Mobile",
+      "price": 55000,
+      "serial_no": "abc292",
+      "release_date": "2022-04-04",
+      "stock_unit": "1111",
+      "desc": "my mobile",
+      "id": 24
+    },
+    {
+      "productid": "023",
+      "name": "abcmobile1",
+      "category": "Mobile",
+      "price": 22000,
+      "serial_no": "abc293",
+      "release_date": "2022-04-04",
+      "stock_unit": "121",
+      "desc": "asdf",
+      "id": 25
+    },
+    {
+      "productid": "12",
+      "name": "abcmobile2",
+      "category": "Mobile",
+      "price": 22222,
+      "serial_no": "abc294",
+      "release_date": "2022-04-11",
+      "stock_unit": "99",
+      "desc": "fdddcedfved",
+      "id": 26
+    }
+  ]
+}

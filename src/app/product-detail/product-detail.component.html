@@ -1,0 +1,33 @@
+<!-- <div class="container-fluid" *ngFor="let data of productDetailsData" >
+    <dt style="color:rgb(7, 9, 2)"></dt> 
+    <dd><mark>Product id</mark> : {{data.productid}}</dd>
+    <dd><mark>Product Name</mark> : {{data.name}}</dd>
+    <dd><mark>Catagory</mark> : {{data.category}}</dd>
+    <dd><mark>Price</mark> : {{data.price}}</dd>
+    <dd><mark>Serial No.</mark> : {{data.serial_no}}</dd>
+    <dd><mark> Date</mark> : {{data.release_date}}</dd>
+    <dd><mark> Unit</mark> : {{data.stock_unit}}</dd>
+    <dd><mark>Description</mark> : {{data.desc}}</dd>
+</div> -->
+<div class="container">
+<div class="list-group">
+    <ul >
+        <li class="list-group-item font-weight-bold text-uppercase text-center">Product Details</li>
+      
+        
+        <li class="list-group-item list-group-item-primary">Product Id : {{productDetailsData.productid}}</li>
+        <li class="list-group-item list-group-item-secondary">Product Name : {{productDetailsData.name}}</li>
+        <li class="list-group-item list-group-item-success">Catagory : {{productDetailsData.category}}</li>
+        <li class="list-group-item list-group-item-danger">Price :  {{productDetailsData.price}}</li>
+        <li class="list-group-item list-group-item-warning">Serial No. : {{productDetailsData.serial_no}}</li>
+        <li class="list-group-item list-group-item-info">Date : {{productDetailsData.release_date}}</li>
+        <li class="list-group-item list-group-item-light">Unit : {{productDetailsData.stock_unit}}</li>
+        <li class="list-group-item list-group-item-dark">Description : {{productDetailsData.desc}}</li>
+      </ul>
+</div>
+</div>
+
+
+<div class="text-center">
+    <button class="btn btn-danger btn-lg" routerLink="/productlist">  Back  </button>
+</div>

@@ -1,0 +1,44 @@
+<app-welcome></app-welcome>
+<div class="text-right mx-4">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-info"><a routerLink="/newform" style="color: azure;">Add New Product</a></nav> -->
+  <button class="btn btn-success" routerLink="/newform">add new Product</button>
+</div>
+<div>
+    <table class="table table-info mt-3">
+        <thead>
+          <tr class="text-center">
+            <th scope="col">#</th>
+            <th scope="col">Product Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Serial Number</th>
+            <th scope="col">Release Date</th>
+            <th scope="col">Stock Unit</th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let data of products; index as i" class="text-center">
+          <tr>
+            <th >{{i}}</th>
+            <!-- <td>{{data.id}}</td> -->
+            <td>{{data.productid}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.category}}</td>
+            <td>{{data.price}}</td>
+            <td>{{data.serial_no}}</td>
+            <td>{{data.release_date}}</td>
+            <td>{{data.stock_unit}}</td>
+            <td>{{data.desc}}</td>
+            <td>
+              <!-- <div class="btn btn-primary" routerLink="/productdetail" (click)="getSingleData()"> list</div> -->
+              <button class="btn btn-primary"><a style="color: aliceblue;" [routerLink]="['/detail/'+data.productid]">detail</a></button>
+              <!-- <button class="btn btn-success mx-3">edit</button>
+              <button class="btn btn-danger">delete</button> -->
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+</div>
