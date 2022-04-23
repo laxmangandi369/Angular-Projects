@@ -1,3 +1,6 @@
+this project demonstrate how to display fetched data from api in tabular form and also it has a add product function and a view detail function is also added
+
+
 # AssignmentAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
