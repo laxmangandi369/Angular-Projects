@@ -31,16 +31,16 @@ export class AddNewProductComponent implements OnInit {
   constructor(private apiService:ApiService, private router: Router) {
     
    }
-
+   
    
   ngOnInit(): void {
     
     this.formdetails=new FormGroup({
-      productid: new FormControl('',[Validators.required]),
+      productid: new FormControl('',[Validators.required, Validators.pattern('[0-9]*')]),
       name: new FormControl('',[Validators.required,Validators.maxLength(30)]),
       category: new FormControl('',[Validators.required]),
       price: new FormControl('',[Validators.required]),
-      serial_no: new FormControl('',[Validators.required]),
+      serial_no: new FormControl('',[Validators.required, Validators.pattern('[a-zA-Z0-9]*')]),
       release_date: new FormControl('',[Validators.required]),
       stock_unit: new FormControl('',[Validators.required]),
       desc: new FormControl('',[Validators.required, Validators.maxLength(150)])
@@ -48,13 +48,16 @@ export class AddNewProductComponent implements OnInit {
 
     
   }
+  validAll()
+  {
 
-showError()
-{
-  const{touched,dirty,errors}= this.control;
-  return touched && dirty && errors;
+  }
+// showError()
+// {
+//   const{touched,dirty,errors}= this.control;
+//   return touched && dirty && errors;
   
-}
+// }
 
   clickAddProduct()
   {

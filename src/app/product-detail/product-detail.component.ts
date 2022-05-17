@@ -20,7 +20,7 @@ export class ProductDetailComponent implements OnInit
 
   ngOnInit(): void {
     this.productid = this.route.snapshot.params['productid'];
-    console.log(this.productid);
+    // console.log(this.productid);
 
 
     this.http.get('http://localhost:3000/posts/'+this.productid).subscribe(resp =>{

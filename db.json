@@ -285,6 +285,28 @@
       "stock_unit": "99",
       "desc": "fdddcedfved",
       "id": 26
+    },
+    {
+      "productid": "",
+      "name": "",
+      "category": "",
+      "price": 0,
+      "serial_no": "",
+      "release_date": "",
+      "stock_unit": "",
+      "desc": "",
+      "id": 27
+    },
+    {
+      "productid": "9",
+      "name": "Galaxy S38 Ultra",
+      "category": "Desktop",
+      "price": 444,
+      "serial_no": "abc138",
+      "release_date": "2022-05-04",
+      "stock_unit": "22",
+      "desc": "n",
+      "id": 28
     }
   ]
 }
