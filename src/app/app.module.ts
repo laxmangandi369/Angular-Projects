@@ -2,40 +2,45 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { ProductListComponent } from './product-list/product-list.component';
-import { AddNewProductComponent } from './product-list/add-new-product/add-new-product.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
+
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthguardGuard } from './auth/guard/authguard.guard';
+import { AuthModule } from './auth/auth.module';
+import { FeaturesModule } from './features/features.module';
 
 
-const routes: Routes= [
-  {path: '', component:WelcomeComponent},
-  {path: 'productlist', component: ProductListComponent},
-  {path: 'newform', component : AddNewProductComponent},
-  {path: 'productdetail', component: ProductDetailComponent},
-  {path: 'detail/:productid', component: ProductDetailComponent}
+
+const routes: Routes= [  
+  { path: '',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
+  },
+  { path: 'home',
+    canActivate:[AuthguardGuard],
+    loadChildren: () => import('./features/features.module').then(m => m.FeaturesModule) 
+  },
 
 ];
 
 @NgModule({
   declarations: [
-    AppComponent,
-    WelcomeComponent,
-    ProductListComponent,
-    AddNewProductComponent,
-    ProductDetailComponent
+    AppComponent
+  
     
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    RouterModule,
+    FeaturesModule,
+    AuthModule
+
+    
   ],
-  providers: [],
+  providers: [
+  ],
+  exports:[RouterModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

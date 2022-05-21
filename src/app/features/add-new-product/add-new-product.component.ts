@@ -1,8 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { IProductList } from 'src/app/Iproduct-list';
 import { ApiService } from 'src/app/service/api.service';
-import { IProductList } from '../Iproduct-list';
 
 
 @Component({

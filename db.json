@@ -249,7 +249,7 @@
       "price": 23000,
       "serial_no": "qwe123",
       "release_date": "2022-03-28",
-      "stock_unit": "1111",
+      "stock_unit": "7",
       "desc": "cxz",
       "id": 23
     },
@@ -307,6 +307,52 @@
       "stock_unit": "22",
       "desc": "n",
       "id": 28
+    },
+    {
+      "productid": "123",
+      "name": "qwe",
+      "category": "Mobile",
+      "price": 12000,
+      "serial_no": "abc293",
+      "release_date": "2022-02-09",
+      "stock_unit": "6",
+      "desc": "qwe",
+      "id": 29
+    },
+    {
+      "productid": "333",
+      "name": "abcmobile1",
+      "category": "Mobile",
+      "price": 13000,
+      "serial_no": "abc2932",
+      "release_date": "2022-05-06",
+      "stock_unit": "2",
+      "desc": "qwerty",
+      "id": 30
+    },
+    {
+      "productid": "11",
+      "name": "Galaxy 231 Ultra",
+      "category": "Mobile",
+      "price": 15000,
+      "serial_no": "abc1366",
+      "release_date": "2022-05-01",
+      "stock_unit": "4",
+      "desc": "for dhaval",
+      "id": 31
     }
+  ],
+  "loginUser":[
+    {"id":1,
+      "username":"rrohan419@gmail.com",
+      "password":"password"
+    },
+    {
+      "id":2,
+      "username":"monishassan29@gmail.com",
+      "password":"password"
+    }
+
   ]
+
 }

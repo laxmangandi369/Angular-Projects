@@ -12,7 +12,13 @@
 <div class="container">
 <div class="list-group">
     <ul >
-        <li class="list-group-item font-weight-bold text-uppercase text-center">Product Details</li>
+        <li class="list-group-item font-weight-bold text-uppercase text-center"><h4>Product Details</h4>
+            <div class="text-right">
+                <label *ngIf="productDetailsData.stock_unit>10" style="background-color: rgb(167, 227, 167) ;">Available</label>
+                <label *ngIf="productDetailsData.stock_unit<=10 && productDetailsData.stock_unit>3" style="background-color: rgb(236, 188, 136) ;">only {{productDetailsData.stock_unit}}units left</label>
+                <label *ngIf="productDetailsData.stock_unit<3" style="background-color: rgba(239, 102, 102, 0.74) ;">only {{productDetailsData.stock_unit}} left</label>
+            </div>
+        </li>
       
         
         <li class="list-group-item list-group-item-primary">Product Id : {{productDetailsData.productid}}</li>
@@ -25,7 +31,9 @@
         <li class="list-group-item list-group-item-dark">Description : {{productDetailsData.desc}}</li>
       </ul>
 </div>
+
 </div>
+
 
 
 <div class="text-center">

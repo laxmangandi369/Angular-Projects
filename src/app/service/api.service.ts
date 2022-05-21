@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { IProductList } from '../product-list/Iproduct-list';
+import { IProductList } from '../Iproduct-list';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class ApiService
 {
   API_URL = environment.API_URL;
   product:any;
-  
+  status:string='';
   constructor(private http: HttpClient) { 
     // console.log(http.get<IProductList>();
   }
@@ -29,6 +29,10 @@ export class ApiService
   {
     return this.http.get('http://localhost:3000/posts/'+productid);
   } 
+  deleteProduce(id:number)
+  {
+    this.http.delete(this.API_URL+'posts/'+id);
+  }
   // updateProduct(data: any, id: number){
   //   return this.http.put<any>("http://localhost:3000/posts"+id,data).map((res:any)=>{
   //     return res;

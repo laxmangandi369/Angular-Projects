@@ -21,8 +21,8 @@
         </thead>
         <tbody *ngFor="let data of products; index as i" class="text-center">
           <tr>
-            <th >{{i}}</th>
-            <!-- <td>{{data.id}}</td> -->
+            <!-- <th >{{i}}</th> -->
+            <td>{{data.id}}</td>
             <td>{{data.productid}}</td>
             <td>{{data.name}}</td>
             <td>{{data.category}}</td>
@@ -33,9 +33,9 @@
             <td>{{data.desc}}</td>
             <td>
               <!-- <div class="btn btn-primary" routerLink="/productdetail" (click)="getSingleData()"> list</div> -->
-              <button class="btn btn-primary"><a style="color: aliceblue;" [routerLink]="['/detail/'+data.productid]">detail</a></button>
-              <!-- <button class="btn btn-success mx-3">edit</button>
-              <button class="btn btn-danger">delete</button> -->
+              <!-- <button class="btn btn-primary"><a style="color: aliceblue;" [routerLink]="['/detail/'+data.id]">detail</a></button> -->
+              <!-- <button class="btn btn-success mx-3">edit</button> -->
+              <!-- <button class="btn btn-danger ml-3" (click)="delete(item)">delete</button> -->
             </td>
 
           </tr>
