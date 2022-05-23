@@ -29,7 +29,7 @@ export class ApiService
   {
     return this.http.get('http://localhost:3000/posts/'+productid);
   } 
-  deleteProduce(id:number)
+  deleteProduct(id:number)
   {
     this.http.delete(this.API_URL+'posts/'+id);
   }

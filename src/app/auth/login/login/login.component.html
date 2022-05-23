@@ -1,4 +1,4 @@
-<p>login works!</p>
+<!-- <p>login works!</p>
 <div class="container-fluid">
     <form [formGroup] = "loginForm" (ngSubmit)="loginCheck()">
         <label>email : </label>
@@ -8,4 +8,16 @@
         <input type="password" placeholder="password" formControlName="password">
         <button class="btn btn-primary" >login</button>
     </form>
-</div>
+</div> -->
+
+<div class="container" style="background-color: beige;">
+    <form #myform="ngForm" class="form-signin" [formGroup] = "loginForm" (ngSubmit)="loginCheck(); myform.resetForm()">
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="text" class="form-control" name="username" placeholder="Email Address" autofocus="" formControlName="username" />
+      <input type="password" class="form-control" formControlName="password" name="password" placeholder="Password" required="" />
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    </form>
+  </div>

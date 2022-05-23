@@ -11,18 +11,20 @@ import { AddNewProductComponent } from './add-new-product/add-new-product.compon
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from '../auth/login/login/login.component';
 import { AuthModule } from '../auth/auth.module';
+import { AuthguardGuard } from '../auth/guard/authguard.guard';
+import { UnauthorizeComponent } from '../auth/unauthorize/unauthorize.component';
 
 
 const routes: Routes = [
   // { path: '', component: WelcomeComponent },
   {path:'', redirectTo: 'login', pathMatch: 'full'},
   {path:'login', component: LoginComponent},
-  {path: 'home', component:WelcomeComponent},
+  {path: 'home', component:WelcomeComponent, canActivate:[AuthguardGuard]},
   {path: 'productlist', component: ProductListComponent},
   {path: 'newform', component : AddNewProductComponent},
   {path: 'productdetail', component: ProductDetailComponent},
   {path: 'detail/:id', component: ProductDetailComponent},
-  {path: '**', component: ErrorpageComponent}
+  {path: '**', component: ErrorpageComponent},
 ];
 
 @NgModule({

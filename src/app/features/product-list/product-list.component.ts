@@ -20,7 +20,7 @@ interface Posts{
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit {
-  products:any;
+  products:any=[];
   productid:any;
  productDetailsData:any;
   
@@ -49,9 +49,23 @@ export class ProductListComponent implements OnInit {
   getSingleData()
   {
     this.apiService.findDetails(this.productid).subscribe(res =>{
-     console.log(res+" hey");
+  
      this.productDetailsData=res;
  });
+  }
+
+  deleteData(id:number)
+  {
+    console.log(id);
+    for(let i=0;i<this.products.length;i++)
+    {
+      if(this.products[i].id === id)
+      {
+        this.products.splice(i,1);
+        console.log("inside loop");
+        this.apiService.deleteProduct(id);
+      }
+    }
   }
 }
 

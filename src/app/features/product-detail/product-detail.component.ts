@@ -21,8 +21,8 @@ export class ProductDetailComponent implements OnInit
   ngOnInit(): void {
     this.productid = this.route.snapshot.params['id'];
   
-    console.log(this.productid)
-    // this.getSingleData();
+    console.log(this.productid,"hey");
+    this.getSingleData();
   }
   getSingleData()
   {

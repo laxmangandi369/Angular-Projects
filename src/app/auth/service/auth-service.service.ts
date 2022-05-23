@@ -22,13 +22,12 @@ export class AuthServiceService {
       if(this.user){
         alert("login successful");
         this.isLoggedin= true;
-        console.log("logged in ", this.isLoggedin);
         this.router.navigate(['home']);
       }
       else
       {
-        console.log("abcd",username,password);
-                alert("something went wrong");
+           alert("wrong credientials");
+            this.router.navigate(['login']);
       }
     });
   }
