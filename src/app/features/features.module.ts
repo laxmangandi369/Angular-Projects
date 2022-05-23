@@ -20,10 +20,10 @@ const routes: Routes = [
   {path:'', redirectTo: 'login', pathMatch: 'full'},
   {path:'login', component: LoginComponent},
   {path: 'home', component:WelcomeComponent, canActivate:[AuthguardGuard]},
-  {path: 'productlist', component: ProductListComponent},
-  {path: 'newform', component : AddNewProductComponent},
-  {path: 'productdetail', component: ProductDetailComponent},
-  {path: 'detail/:id', component: ProductDetailComponent},
+  {path: 'productlist', component: ProductListComponent, canActivate:[AuthguardGuard]},
+  {path: 'newform', component : AddNewProductComponent, canActivate:[AuthguardGuard]},
+  {path: 'productdetail', component: ProductDetailComponent, canActivate:[AuthguardGuard]},
+  {path: 'detail/:id', component: ProductDetailComponent, canActivate:[AuthguardGuard]},
   {path: '**', component: ErrorpageComponent},
 ];
 
