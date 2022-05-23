@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { IProductList } from 'src/app/Iproduct-list';
+import Swal from 'sweetalert2';
 
 @Injectable({
   providedIn: 'root'
@@ -20,18 +21,27 @@ export class AuthServiceService {
       });
       // console.warn(this.user);
       if(this.user){
-        alert("login successful");
+        Swal.fire({
+          title:'success',
+          icon:'success'
+        })
         this.isLoggedin= true;
         this.router.navigate(['home']);
+        
       }
       else
       {
-           alert("wrong credientials");
+            Swal.fire({
+              title: 'Error!',
+              titleText: 'Wrong Credientials',
+              icon: 'error'
+            })
+              //  alert("wrong credientials");
             this.router.navigate(['login']);
       }
     });
   }
-
+  
   isUserLoggedIn()
   {
     return this.isLoggedin;
